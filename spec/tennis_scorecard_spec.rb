@@ -1,22 +1,6 @@
 require_relative '../tennis_scorecard.rb'
 
 describe 'tennis scorecard' do
-    # it 'returns "love" given 0' do
-    #     expect(score(0)).to eq 'love'
-    # end
-
-    # it 'returns "fifteen" given 1' do
-    #     expect(score(1)).to eq 'fifteen'
-    # end
-
-    # it 'returns "thirty" given 2' do
-    #     expect(score(2)).to eq 'thirty'
-    # end
-
-    # it 'returns "forty" given 3' do
-    #     expect(score(3)).to eq 'forty'
-    # end
-
     it 'is an array' do
         expect(score([0, 2]).class).to be Array
     end
