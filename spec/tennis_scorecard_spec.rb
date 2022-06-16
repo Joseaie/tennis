@@ -40,4 +40,12 @@ describe 'tennis scorecard' do
     it 'returns "forty" given 3' do
         expect(score([0, 3])).to eq ['love', 'forty']
     end
+
+    it 'returns "deuce" given 3-3' do
+        expect(score([3, 3])).to eq ['deuce', 'deuce']
+    end
+
+    it 'returns "advantage" given 4-3' do
+        expect(score([4, 3])).to eq ['advantage', 'forty']
+    end    
 end
